@@ -17,7 +17,7 @@ class ParkFilter
 
   def find_by_country(country)
     @array.select do |arr|
-      arr[:country] == "#{country.to_s}"
+      arr[:country] == country
     end
   end
 end
